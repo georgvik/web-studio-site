@@ -1,0 +1,119 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+:root {
+  --logo-color: #4d5ae5;
+  --link-color-hover: #404bbf;
+  --text-color: #2e2f42;
+  --color-title-service: #ffffff;
+  --text-color-paragraph: #434455;
+  --button-color: #f4f4fd;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--link-color-hover);
+}
+.header-nav-list,
+.header-contact-list,
+.advantages-list,
+.doing-list,
+.ourteam-list,
+.button-portfolio-list,
+.porfolio-list {
+  list-style-type: none;
+}
+.logo-web {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--logo-color);
+}
+.logo-studio {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--text-color);
+}
+.header-nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--logo-color-dark);
+}
+.header-post-link,
+.link-tel {
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.order-service {
+  background-color: var(--text-color);
+  height: 600px;
+}
+.title-order-service {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--color-title-service);
+  width: 496px;
+  height: 120px;
+  text-align: center;
+}
+.service-button {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background-color: var(--logo-color);
+  color: var(--color-title-service);
+}
+.service-button:hover,
+.service-button:focus {
+  background-color: var(--link-color-hover);
+}
+.advantages-section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+.advantages-description {
+  color: var(--text-color-paragraph);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--text-color);
+}
+.team-section-title {
+}
+.team-description {
+  color: var(--text-color-paragraph);
+}
+.button-portfolio {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background-color: var(--button-color);
+  color: var(--logo-color);
+}
+.button-portfolio:hover,
+v.button-portfolio:focus {
+  background-color: var(--link-color-hover);
+  color: var(--color-title-service);
+}
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+.portfolio-description {
+  color: var(--text-color-paragraph);
+}
