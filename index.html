@@ -26,7 +26,9 @@
         <nav>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link link" href="./index.html">Studio</a>
+              <a class="header-nav-link link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-nav-item">
               <a class="header-nav-link link" href="./portfolio.html"
@@ -58,7 +60,72 @@
         <h1 class="title-order-service">
           Effective Solutions for Your Business
         </h1>
-        <button type="button" class="service-button">Order Service</button>
+        <button type="button" class="service-button" data-modal-open>
+          Order Service
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-modal" data-modal-close>
+              <svg class="svg-close-modal">
+                <use href="./img/sprite.svg#close-black"></use>
+              </svg>
+            </button>
+
+            <form class="form-modal">
+              <h4 class="modal-title">
+                Leave your contacts and we will call you back
+              </h4>
+
+              <label class="modal-label">Name</label>
+              <div class="input-modal">
+                <input type="text" class="modal-input" />
+                <svg class="icon-input">
+                  <use href="./img/sprite.svg#name-black"></use>
+                </svg>
+              </div>
+              <label class="modal-label">Phone</label>
+              <div class="input-modal">
+                <input type="tel" class="modal-input" />
+                <svg class="icon-input">
+                  <use href="./img/sprite.svg#tel"></use>
+                </svg>
+              </div>
+              <label class="modal-label">Email</label>
+              <div class="input-modal">
+                <input type="email" class="modal-input" />
+                <svg class="icon-input">
+                  <use href="./img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <label class="modal-label">Comment</label>
+              <div class="input-modal">
+                <textarea
+                  class="modal-input feedback"
+                  name="comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+              <div class="cheked-modal">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="checked"
+                  class="input-checked"
+                />
+                <label for="checked" class="label-checked"
+                  ><span class="policy-agrement"
+                    ><svg class="checkbox-icon">
+                      <use href="./img/sprite.svg#checked"></use>
+                    </svg>
+                    I accept the terms and conditions of the</span
+                  >
+                  <a href="" class="modal-policy">Privacy Policy</a>
+                </label>
+              </div>
+              <button type="submit" class="modal-button">Send</button>
+            </form>
+          </div>
+        </div>
       </section>
       <section class="our-advantages">
         <h2 hidden>Our advantages</h2>
@@ -358,6 +425,19 @@
           </li>
         </ul>
       </div>
+      <div class="form-footer">
+        <form class="footer-form">
+          <h2 class="title-form-footer">Subscribe</h2>
+          <input
+            type="email"
+            name="mail-footer"
+            class="footer-input"
+            placeholder="Email"
+          />
+          <button type="submit" class="button-form-footer">Subscribe</button>
+        </form>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

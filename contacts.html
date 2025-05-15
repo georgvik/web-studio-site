@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-container">
+        <a href="./index.html" class="logo-link link"
+          ><span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span></a
+        >
+        <nav>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <ul class="header-contact-list">
+        <li>
+          <a class="link header-post-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="link link-tel" href="tel:+11(000)111-11-11"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="flexbox">
+        <div class="transformbox"></div>
+        <div class="transformbox"></div>
+        <div class="transformbox"></div>
+      </div>
+      <form name="signup_form" autocomplete="on" novalidate>
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          Password
+          <input
+            type="password"
+            name="password"
+            autofocus
+            placeholder="password"
+          />
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <form>
+        <p>Choose a color:</p>
+        <label>
+          <input type="radio" name="color" value="red" />
+          Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="white" checked />
+          White
+        </label>
+        <label>
+          <input type="radio" name="color" value="green" />
+          Green
+        </label>
+
+        <p>Select size:</p>
+        <label>
+          <input type="radio" name="size" value="sm" />
+          Small
+        </label>
+        <label>
+          <input type="radio" name="size" value="md" />
+          Medium
+        </label>
+        <label>
+          <input type="radio" name="size" value="lg" checked />
+          Large
+        </label>
+      </form>
+      <label for="Month">Month</label>
+      <select name="month" id="month">
+        <optgroup label="summer">
+          <option value="6">June</option>
+          <option value="7">Jule</option>
+          <option value="8">August</option>
+        </optgroup>
+      </select>
+      <form class="form">
+        <fieldset class="form-group">
+          <legend class="group-title">Enter yuors details</legend>
+          <label class="form-label">
+            Name
+            <input type="text" name="username" />
+          </label>
+          <label class="form-label">
+            Email
+            <input type="email" name="email" />
+          </label>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="group-title">Ваш лідер серед мов програмування</legend>
+          <label for="js"> JavaScript</label>
+          <input type="checkbox" name="languge" value="js" />
+          <label for="Phyton">Phyton</label>
+          <input type="checkbox" name="languge" value="Phyton" />
+          <label for="C">C++</label>
+          <input type="checkbox" name="languge" value="C++" />
+        </fieldset>
+      </form>
+      <form>
+        <label for="user-color">Red</label>
+        <input type="radio" id="user-color" />
+        <label for="user-color">Green</label>
+        <input type="radio" id="user-color" />
+        <input
+          type="number"
+          name="leng"
+          value="0"
+          min="0.5"
+          max="100"
+          step="0.5"
+        />
+      </form>
+    </main>
+  </body>
+</html>
