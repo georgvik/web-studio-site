@@ -986,9 +986,11 @@ img {
 
 .customers-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 190px;
   height: 88px;
-  padding: 16px 40px;
+  /* padding: 16px 40px; */
   border-radius: 4px;
   border-style: solid;
   border-color: var(--light-slate);
