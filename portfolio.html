@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,12 +26,12 @@
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link link current" href="./index.html"
+              <a class="header-nav-link link " href="./index.html"
                 >Studio</a
               >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link link" href="./portfolio.html"
+              <a class="header-nav-link link current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -76,17 +76,19 @@
     </header>
     <section class="portfolio-main">
       <h1 class="hidden-title">Our portfolio</h1>
-      <ul class="button-portfolio-list">
-        <li><button type="button" class="button-portfolio">All</button></li>
-        <li>
-          <button type="button" class="button-portfolio">Web Site</button>
-        </li>
-        <li><button type="button" class="button-portfolio">App</button></li>
-        <li><button type="button" class="button-portfolio">Design</button></li>
-        <li>
-          <button type="button" class="button-portfolio">Marketing</button>
-        </li>
-      </ul>
+      <div class="portbutton-block">
+        <ul class="button-portfolio-list">
+          <li><button type="button" class="button-portfolio">All</button></li>
+          <li>
+            <button type="button" class="button-portfolio">Web Site</button>
+          </li>
+          <li><button type="button" class="button-portfolio">App</button></li>
+          <li><button type="button" class="button-portfolio">Design</button></li>
+          <li>
+            <button type="button" class="button-portfolio">Marketing</button>
+          </li>
+        </ul>
+      </div>
       <ul class="porfolio-list">
         <li class="portfolio-item">
           <div class="box">
@@ -255,7 +257,8 @@
       </ul>
     </section>
     <footer class="footer">
-      <div>
+      <div class="footer-container">
+        <div class="footer-information">
         <a href="./index.html" class="link"
           ><span class="logo-web">Web</span
           ><span class="logo-studio logo-studio-footer">Studio</span></a
@@ -270,43 +273,43 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="" class="social-footer-link">
-              <svg class="svg-team">
+              <svg class="svg-team" width="16" height="16">
                 <use href="./img/sprite.svg#instagram"></use></svg
             ></a>
           </li>
           <li class="footer-social-item">
             <a href="" class="social-footer-link"
-              ><svg class="svg-team">
+              ><svg class="svg-team" width="16" height="16">
                 <use href="./img/sprite.svg#twitter"></use></svg
             ></a>
           </li>
           <li class="footer-social-item">
             <a href="" class="social-footer-link">
-              <svg class="svg-team">
+              <svg class="svg-team" width="16" height="16">
                 <use href="./img/sprite.svg#facebook"></use></svg
             ></a>
           </li>
           <li class="footer-social-item">
             <a href="" class="social-footer-link"
-              ><svg class="svg-team">
+              ><svg class="svg-team" width="16" height="16">
                 <use href="./img/sprite.svg#linkedin"></use></svg
             ></a>
           </li>
         </ul>
       </div>
       <div class="form-footer">
-        <form class="footer-form">
+        
           <h2 class="title-form-footer">Subscribe</h2>
-
+          <form class="footer-form">
           <input
             type="email"
             name="mail-footer"
             class="footer-input"
             placeholder="Email"
           />
-
           <button type="submit" class="button-form-footer">Subscribe</button>
         </form>
+      </div>
       </div>
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -329,7 +332,7 @@
     <div class="mobile-menu_container">
       <ul class="mobile-menu">
         <li class="mobile-menu-item"><a href="./index.html" class="link">Studio</a></li>
-        <li class="mobile-menu-item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="link active">Portfolio</a></li>
         <li class="mobile-menu-item"><a href="" class="link">Contacts</a></li>
       </ul>
     </div>
